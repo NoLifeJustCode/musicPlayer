@@ -1,0 +1,615 @@
+/*
+ * color Classes
+ */
+.violetBg{
+    background-color: #0c1027;
+}
+.musicBlackBg{
+    background-color: #282828;
+}
+/* 
+ * set body
+ */
+body{
+    margin: 0;
+    overflow: auto;
+    padding-bottom: 15vh;
+}
+/* 
+ * set header to stick to top
+ */
+header{
+    position: sticky;
+    top:0;
+    display: block;
+    height: 10vh;
+    z-index: 1;
+}
+header img{
+    height: 100%;
+}
+header p{
+    margin: 0;
+    font-size: 2.5vh;
+    display: inline-block;
+    vertical-align:top;
+    color:white;
+    font-weight: 100;
+    margin:4px;
+    margin-top: 4vh;
+    
+}
+#fav{
+    text-decoration: none;
+    color: white;
+    vertical-align: top;
+    position: relative;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    margin-left: 5vw;
+}
+/* 
+ set radius
+ */
+.profileImage{
+    border-radius: 50%;
+
+}
+.floatRight{
+    float: right;
+    position: relative;
+}
+.notification{
+    color:white;
+    margin-right:3vw;
+    position: relative;
+    top:60%;
+    font-size:3.5vh;
+}
+.top50{
+    position: relative;
+    top:25%;
+}
+/* 
+ * settup search input with icons
+ */
+.search{
+    display: inline-block;
+    color:white;
+    background-color: #12193e;
+    padding:1.5vh;
+    top:50%;
+    margin-right: 3vw;
+    padding: 5px;
+    border-radius: 10px 10px 10px 10px;
+    width: auto;
+}
+.search i{
+    margin: 5px;
+}
+.search input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color:white;
+    padding: 5px;
+    text-overflow: ellipsis;
+    text-indent: 2px;
+    width: 15vw;
+    
+}
+/*
+ * set music player sticking to bottom of page
+ */
+.musicPlayer{
+    position: fixed;
+    bottom: 0;
+    z-index:1;
+    width: 100%;
+}
+.options{
+    display:flex;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    width: 25%;
+    font-size: 1vw;
+    margin: auto;
+}
+.options i{
+    color:white;
+    align-content: flex-end;
+    position: relative;
+    top:0;
+    line-height: 1.5vw;
+   
+}
+.musicprogress{
+   padding-left: 25%;
+   margin-top: 2vh; 
+   width:100% ;  
+}
+.progress{
+    width: 40%;
+    height: 1vh;
+    background-color: white;
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+/*
+ * progress of music
+ */
+.progressBar{
+    background-color: chartreuse;
+    width: 25%;
+    height: 100%;
+    
+}
+.progressBar:hover{
+    background-color: chartreuse;
+    width: 80%;
+    height: 100%;
+    transition: width 10s;
+}
+.time{
+    display: inline-block;
+    vertical-align: top;
+    margin:0;
+    margin-right: 5px;
+}
+.musicInfo{
+    height: 10vh;
+    display: inline-block;
+    color:white;
+    margin-left: 10vw;
+}
+.musicInfo img{
+    height: 100%;
+}
+.musicInfo p{
+    display: inline-block;
+}
+.musicInfo i{
+    vertical-align: top;
+}
+/*
+ * music Title
+ */
+p.Title{
+    text-overflow: clip;
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    line-height: 4vh;
+}
+/*
+ * artist info
+ */
+p.Artist{
+    display: inline-block;
+    margin: 0;
+   
+}
+.musicOptions{
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    height: 10vh;
+    top:5vh;
+}
+.musicOptions i{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/*
+ * play list queue setup
+ */
+.queue{
+    display: inline-flex;
+    flex-direction: column;
+    
+    width:100% ;
+}
+.queue .music{
+    display: inline-flex;
+    height: 10vh;
+    color: white;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: end;
+    margin-bottom: 2vh;
+}
+/*
+ * view setup of songs in playlist queue
+ */
+.music img{
+    height: 10vh;
+}
+.music p{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+.music i{
+    vertical-align: top;
+}
+/*
+ * counter of songs in queue
+ */
+.counter{
+    position: relative;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.marginleftRight5{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+aside{
+    float: right;
+    width: 20%;
+}
+/*
+ * Title of playlist 
+ */
+.caption{
+    width: 100%;
+}
+.caption h2{
+    display: inline-block;
+    color:white;
+}
+/*
+ * latest release setup
+ */
+#latestRelease{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:56%;
+}
+/*
+ * content of latest release
+ */
+.content{
+   position: relative;
+   width: 50%;
+   color:#c9c9ce;
+   display: inline-block;
+   margin: 0;
+   vertical-align: top;
+   margin-top: 1vh;
+}
+.content img{
+    height: 15vh;
+    width: 15vh;
+}
+/*
+ * setup of popular artist tab
+ */
+#popularArtist{
+    color: white;
+    display: flex;
+    width:56%;
+    
+}
+main{
+    margin-block-start: 5em;
+}
+main h3{
+    color:white;
+}
+
+/*
+ * artist setup
+ */
+.artist{
+    height: 17.5vh;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 1vw;
+    max-width: 15%;
+    flex-grow: 1;
+}
+
+.artist img{
+    height: 14vh;
+    
+    width: 100%;
+    border-radius:50% ;
+}
+.artist p{
+    margin: 2px;
+    text-align: center;
+}
+
+.stations img{
+    height: 10vh;
+    width: 10vh;
+    position: relative;
+    top:2vh;
+    left:3vw;
+    
+    display: inline-block;
+}
+a img{
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    margin: 0;
+    margin-left: 2vw;
+}
+/*
+ *  song station setup
+ */
+.stations {
+    background-color: #101642;
+    width: 55%;
+    height: 14vh;
+    position: relative;
+    display: flex;
+    
+    margin-top: 3vh;
+}
+/*
+ * stations in song station
+ */
+.stations a{
+    text-decoration: none;
+    border-radius: 50%;
+    height: 10vh;
+    width: 10vh;
+    padding: 0;
+    margin-left: 2vw;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+/*
+ * genre setup
+ */
+.genre{
+    width: 57%;
+    display: flex;
+    margin-top:2% ;
+    
+}
+/*
+ *  items in genre
+ */
+.items{
+    display: inline-block;
+    height: 25vh;
+    width: 90%;
+    max-width: 90%;;
+    margin: 0;
+    overflow: hidden;
+}
+.items img{
+    height: inherit;
+    width: inherit;
+}
+.items img:hover{
+   transform: scale(1.5) ;
+   transition: transform 0.5s ease-in-out;
+}
+/*
+ *  setup for latest releases on specific langs
+ */
+.latest{
+    width: 56%;
+    height: 30%;
+    display: flex;
+    margin-top: 4vh;
+}
+.latestitems{
+    display: inline-block;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+.latestitems img{
+    height: 70%;
+    width: 90%;
+    margin: auto;
+}
+.latestTitle{
+    color:white;
+    
+}
+aside{
+    margin-right: 10vw;
+    margin-block-start: 5em;
+}
+/*
+ *  main carousel
+ */
+.carousel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
+    height: 30vh;
+}
+.carousel img{
+    border-radius: 0%;
+    height: inherit;
+    width: 100%;
+    margin: 0;
+}
+.carousel a{
+    display: inline-block;
+    width: 30%;
+    height: 20vh;
+    flex-shrink: 1;
+    margin: 0;
+    padding: 0;
+}
+.carousel a:hover{
+     
+    transform:scaleX(1.5) scaleY(1.5) scaleZ(1.5);
+    width: 40%;
+    transition:all 1s ease-in-out;
+}
+/*
+ * setup of drop down menus 
+ */
+.dropdown{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    margin-right: 1vw;
+    
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top:2vh;
+    /* width: fit-content; */
+    /* vertical-align: top; */
+    right: 0;
+    margin-right: 1vw;
+    background-color: white;
+    width: max-content;
+    z-index: 1;
+}
+.dropdown-content a{
+     text-decoration: none; 
+     border-bottom:2px solid grey ;
+    display:block;
+    color:black;
+    font-size: 2.5vh;
+    background-color: white;
+    padding:2px;
+   
+   
+    
+}
+.dropdown-content a:hover{
+    background-color: grey;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content i{
+    margin-right:1vw ;
+    color:grey;
+}
+/*
+ * padding of items in playlist
+ */
+a.padQueue{
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+} 
+p.margin1vw,i.margin1vw{
+margin-left: 1vw;
+margin-right: 1vw;
+}
+div.musicArtist{
+    display: inline-block;
+    height: 100%;
+     width: auto;
+}
+/*
+ * single playlist screen title of band
+ */
+.ScreenTitle {
+ height: 60%;
+ width: 60%;
+ background-color: #141b41;
+ position: relative;   
+}
+.ScreenTitle img{
+    height: 100%;
+    width: 35%;
+}
+.whiteText{
+    color:white;
+}
+.sideContent{
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    max-width: 60%;
+    padding-left: 2vw;
+    box-sizing: border-box;
+}
+.followers{
+    position: absolute; 
+    right: 2%;
+    top:13%;
+}
+.PlayButton{
+    width: fit-content;
+    
+}
+.PlayButton button{
+    padding:1vh;
+    font-size: 1.3em;
+    background-image: linear-gradient(to right,#3725b0,#b745dc);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+/*
+ * list of items in playlist
+ */
+.list{
+    width: 100%;
+}
+/*
+ * song elements in playlist
+ */
+.songs{
+    background-color: #1a1e33;
+    height: 14vh;
+    width: 100%;
+    margin-block-start: 0.5em;
+}
+.songs .counter{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    margin-left: 1vw;
+}
+.songs img{
+    height: 10vh;
+    width: 15vh;
+    position: relative;
+    top:2vh;
+    margin-left: 1vw;
+}
+.songs i{
+    float: right;
+    margin-right: 2vw;
+    position: relative;
+    top:50%;
+    transform: translate(0,-50%);
+    cursor: pointer;
+}
+.playIcon{
+    position: relative;
+    display: inline-block;
+    
+    cursor: pointer;
+}
+.playIcon img{
+    border-radius: unset;
+    margin: unset;
+}
+.playIcon i{
+    display: none;
+    position: absolute;
+    /* margin: auto; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.playIcon:hover i{
+    display: block;
+    color: white;
+}
+
